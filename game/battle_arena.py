@@ -1,7 +1,6 @@
 import os
-import output_helper as oh
 import random as rd
-import input_helper as ih
+from helpers import input_helper as ih, output_helper as oh
 
 # This class is responsible for the execution of a battle between two Pokémon
 class BattleArena:

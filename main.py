@@ -1,6 +1,5 @@
-import pokemon as pk
-import attack as at
-import game as gm
+from pokemon import pokemon as pk, attack as at
+from game import main_menu as mm
 
 # Creating Pokémon and assigning some attacks
 POKEMONS = [
@@ -12,5 +11,5 @@ POKEMONS = [
 ]
 
 # Instantiating game object with created Pokémon and starting the game loop
-GAME = gm.Game(POKEMONS)
+GAME = mm.MainMenu(POKEMONS)
 GAME.loop()

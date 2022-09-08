@@ -1,15 +1,14 @@
-import battle_arena as bt
-import input_helper as ih
-import output_helper as oh
+from game import battle_arena as ba
+from helpers import input_helper as ih, output_helper as oh
 import os
 
 # This class is responsible for showing the main menu
 # It contains functionality for setting your main Pokémon and starting a new battle with another Pokémon
-class Game:
+class MainMenu:
     def __init__(self, pokemons):
         self.menu_options = ["Choose your main Pokémon", "Battle!", "Exit"]
         self.pokemons = pokemons
-        self.battle_arena = bt.BattleArena()
+        self.battle_arena = ba.BattleArena()
         self.main_pokemon_index = None
         self.main_pokemon = None
 

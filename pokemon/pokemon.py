@@ -1,5 +1,5 @@
 import random as rd
-import output_helper as oh
+from helpers import output_helper as oh
 
 class Pokemon:
     def __init__(self, name, hit_points, attacks):
